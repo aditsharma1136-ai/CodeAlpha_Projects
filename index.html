@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="gallery-container">
+        <h1>Image Gallery</h1>
+        
+        <!-- Filter Buttons -->
+        <div class="filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="landscape">Landscape</button>
+            <button class="filter-btn" data-filter="portrait">Portrait</button>
+            <button class="filter-btn" data-filter="abstract">Abstract</button>
+        </div>
+        
+        <!-- Gallery Grid -->
+        <div class="gallery">
+            <img src="./images/L1.jpg" alt="Landscape 1" data-category="landscape">
+            <img src="./images/P1.jpg" alt="Portrait 1" data-category="portrait">
+            <img src="./images/A1.jpg" alt="Abstract 1" data-category="abstract">
+            <img src="./images/L2.jpg" alt="Landscape 2" data-category="landscape">
+            <img src="./images/P2.jpg" alt="Portrait 2" data-category="portrait">
+            <img src="./images/A2.jpg" alt="Abstract 2" data-category="abstract">
+
+            <img src="./images/L3.jpg" alt="Landscape 1" data-category="landscape">
+            <img src="./images/P3.jpg" alt="Portrait 1" data-category="portrait">
+            <img src="./images/A3.jpg" alt="Abstract 1" data-category="abstract">
+            <img src="./images/L4.jpg" alt="Landscape 2" data-category="landscape">
+            <img src="./images/P4.jpg" alt="Portrait 2" data-category="portrait">
+            <img src="./images/A4.jpg" alt="Abstract 2" data-category="abstract">
+            <!-- Add more images as needed -->
+        </div>
+    </div>
+    
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <span class="close">&times;</span>
+        <img class="lightbox-img" id="lightbox-img" src="" alt="">
+        <button class="nav-btn prev" id="prev-btn">&lt;</button>
+        <button class="nav-btn next" id="next-btn">&gt;</button>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
